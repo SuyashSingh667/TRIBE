@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#257bf4",
+                        "background-light": "#f5f7f8",
+                        "background-dark": "#101722",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .hover-lift {
+            transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        .hover-lift:hover {
+            transform: translateY(-8px);
+        }
+        .gradient-card-tech {
+            background: linear-gradient(135deg, rgba(37, 123, 244, 0.2) 0%, rgba(16, 23, 34, 0.8) 100%);
+        }
+        .gradient-card-cultural {
+            background: linear-gradient(135deg, rgba(168, 85, 247, 0.2) 0%, rgba(16, 23, 34, 0.8) 100%);
+        }
+        .gradient-card-sports {
+            background: linear-gradient(135deg, rgba(34, 197, 94, 0.2) 0%, rgba(16, 23, 34, 0.8) 100%);
+        }
+    </style>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<!-- Navbar -->
+<header class="sticky top-0 z-50 glass border-b border-slate-200/10 px-4 md:px-10 py-4">
+<div class="max-w-7xl mx-auto flex items-center justify-between">
+<div class="flex items-center gap-6">
+<button class="flex items-center justify-center p-2 rounded-lg bg-primary/10 text-primary hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined">smart_toy</span>
+</button>
+<div class="flex items-center gap-2">
+<div class="size-8 text-primary">
+<svg fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 45.8096C19.6865 45.8096 15.4698 44.5305 11.8832 42.134C8.29667 39.7376 5.50128 36.3314 3.85056 32.3462C2.19985 28.361 1.76794 23.9758 2.60947 19.7452C3.451 15.5145 5.52816 11.6284 8.57829 8.5783C11.6284 5.52817 15.5145 3.45101 19.7452 2.60948C23.9758 1.76795 28.361 2.19986 32.3462 3.85057C36.3314 5.50129 39.7376 8.29668 42.134 11.8833C44.5305 15.4698 45.8096 19.6865 45.8096 24L24 24L24 45.8096Z"></path>
+</svg>
+</div>
+<h2 class="text-xl font-black tracking-tight dark:text-white">TRIBE</h2>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="hidden md:flex items-center gap-2 mr-4">
+<button class="p-2.5 rounded-xl glass hover:bg-slate-800 transition-colors">
+<span class="material-symbols-outlined text-slate-400">calendar_today</span>
+</button>
+<button class="p-2.5 rounded-xl glass hover:bg-slate-800 transition-colors">
+<span class="material-symbols-outlined text-slate-400">settings</span>
+</button>
+</div>
+<div class="flex items-center gap-3 pl-4 border-l border-slate-700">
+<div class="text-right hidden sm:block">
+<p class="text-sm font-bold leading-none mb-1">Alex Rivera</p>
+<p class="text-xs text-slate-500">Premium Member</p>
+</div>
+<div class="size-10 rounded-full bg-slate-800 border-2 border-primary/30 p-0.5">
+<img alt="Alex Rivera" class="rounded-full w-full h-full object-cover" data-alt="User profile avatar of Alex Rivera" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkB9Id3ueXavOYHRY4LYGdOfqKibfvP8yG_qwvDIAheJVmOGbJX9mYPrt10ForQLhxgzr9a15nkILoc6ve1DAjPD4i1zIVClJ8_OWXxTtrlNTCr-IWht9vvpUlvL6bslnluwgc_wr2w39sdml5OlZos4oPr55PGANOO_NvOu7EkYb7UYJSvhFnzKVmkZShAezemfJ6tuPtIqjFJPWKNE18xdwGZHRPspX1BsMQQafxGiifbyUCQ5mPRLhXhL73bnYbN3HI-OlFOQ"/>
+</div>
+</div>
+</div>
+</div>
+</header>
+<!-- Main Content -->
+<main class="max-w-7xl mx-auto w-full px-4 md:px-10 py-12 flex-1 flex flex-col">
+<!-- Hero Section -->
+<section class="mb-12">
+<h1 class="text-4xl md:text-6xl font-black mb-4 bg-gradient-to-r from-white to-slate-500 bg-clip-text text-transparent">
+                    Explore Your Realm.
+                </h1>
+<p class="text-slate-400 text-lg max-w-2xl leading-relaxed">
+                    Welcome back to the TRIBE dashboard. Your personal hub for technical innovation, cultural expression, and athletic excellence.
+                </p>
+</section>
+<!-- Navigation Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+<!-- TECHNICAL CARD -->
+<div class="hover-lift group relative overflow-hidden rounded-xl glass gradient-card-tech border border-primary/20 p-8 flex flex-col justify-between min-h-[420px] cursor-pointer shadow-2xl shadow-primary/10">
+<div class="absolute top-0 right-0 p-6 opacity-20 group-hover:opacity-40 transition-opacity">
+<span class="material-symbols-outlined text-8xl text-primary">terminal</span>
+</div>
+<div>
+<div class="size-12 rounded-lg bg-primary/20 flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined">developer_mode</span>
+</div>
+<h3 class="text-3xl font-bold mb-3">TECHNICAL</h3>
+<p class="text-slate-400 leading-relaxed">Innovation, software architecture, and the future of digital engineering.</p>
+</div>
+<div class="flex items-center gap-2 mt-8 text-primary font-bold group-hover:gap-4 transition-all">
+<span>Enter Terminal</span>
+<span class="material-symbols-outlined">arrow_forward</span>
+</div>
+</div>
+<!-- CULTURAL CARD -->
+<div class="hover-lift group relative overflow-hidden rounded-xl glass gradient-card-cultural border border-purple-500/20 p-8 flex flex-col justify-between min-h-[420px] cursor-pointer shadow-2xl shadow-purple-500/10">
+<div class="absolute top-0 right-0 p-6 opacity-20 group-hover:opacity-40 transition-opacity">
+<span class="material-symbols-outlined text-8xl text-purple-400">palette</span>
+</div>
+<div>
+<div class="size-12 rounded-lg bg-purple-500/20 flex items-center justify-center text-purple-400 mb-6">
+<span class="material-symbols-outlined">theater_comedy</span>
+</div>
+<h3 class="text-3xl font-bold mb-3">CULTURAL</h3>
+<p class="text-slate-400 leading-relaxed">Exploring arts, human expression, and global cultural perspectives.</p>
+</div>
+<div class="flex items-center gap-2 mt-8 text-purple-400 font-bold group-hover:gap-4 transition-all">
+<span>Discover Arts</span>
+<span class="material-symbols-outlined">arrow_forward</span>
+</div>
+</div>
+<!-- SPORTS CARD -->
+<div class="hover-lift group relative overflow-hidden rounded-xl glass gradient-card-sports border border-green-500/20 p-8 flex flex-col justify-between min-h-[420px] cursor-pointer shadow-2xl shadow-green-500/10">
+<div class="absolute top-0 right-0 p-6 opacity-20 group-hover:opacity-40 transition-opacity">
+<span class="material-symbols-outlined text-8xl text-green-400">fitness_center</span>
+</div>
+<div>
+<div class="size-12 rounded-lg bg-green-500/20 flex items-center justify-center text-green-400 mb-6">
+<span class="material-symbols-outlined">sports_basketball</span>
+</div>
+<h3 class="text-3xl font-bold mb-3">SPORTS</h3>
+<p class="text-slate-400 leading-relaxed">Physical peak performance, competitive spirit, and athletic training.</p>
+</div>
+<div class="flex items-center gap-2 mt-8 text-green-400 font-bold group-hover:gap-4 transition-all">
+<span>View Training</span>
+<span class="material-symbols-outlined">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- Bottom Stats Section -->
+<div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
+<div class="glass rounded-xl p-6 flex items-center gap-4">
+<div class="size-10 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">bolt</span>
+</div>
+<div>
+<p class="text-xs text-slate-500 uppercase tracking-widest font-bold">Activity Streak</p>
+<p class="text-xl font-bold">12 Days</p>
+</div>
+</div>
+<div class="glass rounded-xl p-6 flex items-center gap-4">
+<div class="size-10 rounded-full bg-purple-500/10 flex items-center justify-center text-purple-400">
+<span class="material-symbols-outlined">groups</span>
+</div>
+<div>
+<p class="text-xs text-slate-500 uppercase tracking-widest font-bold">Community Reach</p>
+<p class="text-xl font-bold">1.2k People</p>
+</div>
+</div>
+<div class="glass rounded-xl p-6 flex items-center gap-4">
+<div class="size-10 rounded-full bg-green-500/10 flex items-center justify-center text-green-400">
+<span class="material-symbols-outlined">emoji_events</span>
+</div>
+<div>
+<p class="text-xs text-slate-500 uppercase tracking-widest font-bold">Total Badges</p>
+<p class="text-xl font-bold">24 Earned</p>
+</div>
+</div>
+<div class="glass rounded-xl p-6 flex items-center gap-4">
+<div class="size-10 rounded-full bg-slate-500/10 flex items-center justify-center text-slate-400">
+<span class="material-symbols-outlined">history</span>
+</div>
+<div>
+<p class="text-xs text-slate-500 uppercase tracking-widest font-bold">Last Action</p>
+<p class="text-xl font-bold">Tech Sync</p>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="mt-auto px-10 py-8 border-t border-slate-200/5 glass">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+<div class="flex items-center gap-2">
+<div class="size-5 text-primary opacity-50">
+<svg fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 45.8096C19.6865 45.8096 15.4698 44.5305 11.8832 42.134C8.29667 39.7376 5.50128 36.3314 3.85056 32.3462C2.19985 28.361 1.76794 23.9758 2.60947 19.7452C3.451 15.5145 5.52816 11.6284 8.57829 8.5783C11.6284 5.52817 15.5145 3.45101 19.7452 2.60948C23.9758 1.76795 28.361 2.19986 32.3462 3.85057C36.3314 5.50129 39.7376 8.29668 42.134 11.8833C44.5305 15.4698 45.8096 19.6865 45.8096 24L24 24L24 45.8096Z"></path>
+</svg>
+</div>
+<span class="text-xs text-slate-500 font-bold uppercase tracking-tighter">© 2024 TRIBE ECOSYSTEM. ALL RIGHTS RESERVED.</span>
+</div>
+<div class="flex gap-8 text-xs font-bold text-slate-500 uppercase tracking-widest">
+<a class="hover:text-primary transition-colors" href="#">Privacy</a>
+<a class="hover:text-primary transition-colors" href="#">Protocol</a>
+<a class="hover:text-primary transition-colors" href="#">Support</a>
+</div>
+</div>
+</footer>
+</div>
+</body></html>

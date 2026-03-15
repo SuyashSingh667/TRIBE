@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TRIBE CABINET - Technical Clubs</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#257bf4",
+                        "background-light": "#f5f7f8",
+                        "background-dark": "#101722",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .club-card:hover {
+            box-shadow: 0 0 20px rgba(37, 123, 244, 0.4);
+            border-color: #257bf4;
+            transform: translateY(-4px);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen">
+<div class="flex h-screen overflow-hidden">
+<!-- Sidebar Navigation -->
+<aside class="w-64 glass-panel border-r border-slate-200/10 hidden md:flex flex-col">
+<div class="p-6 flex items-center gap-3">
+<div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-white">hub</span>
+</div>
+<h1 class="text-xl font-bold tracking-tight">TRIBE</h1>
+</div>
+<nav class="flex-1 px-4 py-4 space-y-2">
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 transition-all" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="font-medium">Dashboard</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg bg-primary/20 text-primary border border-primary/30" href="#">
+<span class="material-symbols-outlined">groups</span>
+<span class="font-medium">Clubs</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 transition-all" href="#">
+<span class="material-symbols-outlined">event</span>
+<span class="font-medium">Events</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 transition-all" href="#">
+<span class="material-symbols-outlined">account_circle</span>
+<span class="font-medium">Profile</span>
+</a>
+<div class="pt-8 pb-2 px-4 uppercase text-xs font-bold text-slate-500 tracking-widest">Support</div>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 transition-all" href="#">
+<span class="material-symbols-outlined">settings</span>
+<span class="font-medium">Settings</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 transition-all" href="#">
+<span class="material-symbols-outlined">help</span>
+<span class="font-medium">Help Center</span>
+</a>
+</nav>
+<div class="p-4 mt-auto">
+<div class="glass-panel rounded-xl p-4 text-center">
+<p class="text-xs text-slate-400 mb-2">Technical Portal</p>
+<p class="font-bold">TRIBE v2.4</p>
+</div>
+</div>
+</aside>
+<!-- Main Content Area -->
+<main class="flex-1 overflow-y-auto">
+<!-- Top Navbar -->
+<header class="sticky top-0 z-50 glass-panel px-8 py-4 flex items-center justify-between">
+<div class="flex items-center gap-4 flex-1 max-w-xl">
+<div class="relative w-full">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-500">search</span>
+<input class="w-full bg-slate-800/50 border-slate-700 rounded-xl pl-10 pr-4 py-2 focus:ring-primary focus:border-primary text-sm" placeholder="Search clubs, domains or leads..." type="text"/>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<button class="w-10 h-10 flex items-center justify-center rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<div class="flex items-center gap-3 pl-4 border-l border-slate-700">
+<div class="text-right hidden sm:block">
+<p class="text-sm font-bold">Alex Rivera</p>
+<p class="text-xs text-slate-400">Lead Architect</p>
+</div>
+<img alt="Profile" class="w-10 h-10 rounded-full border-2 border-primary" data-alt="Portrait of a male professional user avatar" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiH3WaY7UFI7PNjfjuCOa6WQO7awYf1o-niz2LdoUrFs-yWYQfiz8DW0NTHi9GaWeT5wXI50_Dn8sMT5MUtYio7bOwlSRWuFv65s6qqencbxyNxHfUuu2DppSLA_JvMPNSe3toun05bOxV_RhACrswpaCnS5pJcgZym1aC04clyNJmYnmoVuMja6USdOMFyNZLRU_aGUr-9QKyjkzShOs-DQy9xPhkOkb8wncEI2Uz7iqfRldOG607_7LUSLRYeRcETxNu58tFog"/>
+</div>
+</div>
+</header>
+<!-- Grid Content -->
+<div class="p-8 max-w-7xl mx-auto">
+<!-- Header Section -->
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-10">
+<div>
+<h2 class="text-6xl font-black tracking-tighter text-slate-900 dark:text-white mb-2">CABINET</h2>
+<p class="text-lg font-medium text-primary tracking-widest uppercase">Technical Clubs and Chapters</p>
+</div>
+<button class="flex items-center gap-2 px-6 py-3 bg-slate-800 hover:bg-slate-700 text-white rounded-xl font-bold transition-all border border-slate-700">
+<span class="material-symbols-outlined">arrow_back</span>
+                        Back to Dashboard
+                    </button>
+</div>
+<!-- Clubs Grid (5x5 responsive) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+<!-- Club Card 1 -->
+<div class="club-card glass-panel rounded-xl overflow-hidden transition-all duration-300 cursor-pointer group">
+<div class="h-32 w-full bg-gradient-to-br from-blue-600 to-indigo-900 relative">
+<div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-all"></div>
+<div class="absolute bottom-3 left-3 flex items-center gap-2">
+<div class="p-2 bg-white/10 backdrop-blur rounded-lg">
+<span class="material-symbols-outlined text-white text-xl">code</span>
+</div>
+</div>
+</div>
+<div class="p-5">
+<h3 class="text-lg font-bold group-hover:text-primary transition-colors">Coding Club</h3>
+<p class="text-xs text-slate-400 mt-1">Algorithmic Excellence</p>
+<div class="mt-4 flex justify-between items-center text-xs">
+<span class="bg-primary/10 text-primary px-2 py-1 rounded">240 Members</span>
+<span class="material-symbols-outlined text-slate-600 group-hover:text-primary">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- Club Card 2 -->
+<div class="club-card glass-panel rounded-xl overflow-hidden transition-all duration-300 cursor-pointer group">
+<div class="h-32 w-full bg-gradient-to-br from-red-600 to-orange-900 relative">
+<div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-all"></div>
+<div class="absolute bottom-3 left-3 flex items-center gap-2">
+<div class="p-2 bg-white/10 backdrop-blur rounded-lg">
+<span class="material-symbols-outlined text-white text-xl">smart_toy</span>
+</div>
+</div>
+</div>
+<div class="p-5">
+<h3 class="text-lg font-bold group-hover:text-primary transition-colors">Robotics Society</h3>
+<p class="text-xs text-slate-400 mt-1">Hardware &amp; Automation</p>
+<div class="mt-4 flex justify-between items-center text-xs">
+<span class="bg-primary/10 text-primary px-2 py-1 rounded">185 Members</span>
+<span class="material-symbols-outlined text-slate-600 group-hover:text-primary">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- Club Card 3 -->
+<div class="club-card glass-panel rounded-xl overflow-hidden transition-all duration-300 cursor-pointer group">
+<div class="h-32 w-full bg-gradient-to-br from-emerald-600 to-teal-900 relative">
+<div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-all"></div>
+<div class="absolute bottom-3 left-3 flex items-center gap-2">
+<div class="p-2 bg-white/10 backdrop-blur rounded-lg">
+<span class="material-symbols-outlined text-white text-xl">psychology</span>
+</div>
+</div>
+</div>
+<div class="p-5">
+<h3 class="text-lg font-bold group-hover:text-primary transition-colors">AI/ML Group</h3>
+<p class="text-xs text-slate-400 mt-1">Neural Networks</p>
+<div class="mt-4 flex justify-between items-center text-xs">
+<span class="bg-primary/10 text-primary px-2 py-1 rounded">312 Members</span>
+<span class="material-symbols-outlined text-slate-600 group-hover:text-primary">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- Club Card 4 -->
+<div class="club-card glass-panel rounded-xl overflow-hidden transition-all duration-300 cursor-pointer group">
+<div class="h-32 w-full bg-gradient-to-br from-purple-600 to-fuchsia-900 relative">
+<div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-all"></div>
+<div class="absolute bottom-3 left-3 flex items-center gap-2">
+<div class="p-2 bg-white/10 backdrop-blur rounded-lg">
+<span class="material-symbols-outlined text-white text-xl">lock</span>
+</div>
+</div>
+</div>
+<div class="p-5">
+<h3 class="text-lg font-bold group-hover:text-primary transition-colors">Cyber Security</h3>
+<p class="text-xs text-slate-400 mt-1">Ethical Hacking</p>
+<div class="mt-4 flex justify-between items-center text-xs">
+<span class="bg-primary/10 text-primary px-2 py-1 rounded">145 Members</span>
+<span class="material-symbols-outlined text-slate-600 group-hover:text-primary">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- Club Card 5 -->
+<div class="club-card glass-panel rounded-xl overflow-hidden transition-all duration-300 cursor-pointer group">
+<div class="h-32 w-full bg-gradient-to-br from-pink-600 to-rose-900 relative">
+<div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-all"></div>
+<div class="absolute bottom-3 left-3 flex items-center gap-2">
+<div class="p-2 bg-white/10 backdrop-blur rounded-lg">
+<span class="material-symbols-outlined text-white text-xl">terminal</span>
+</div>
+</div>
+</div>
+<div class="p-5">
+<h3 class="text-lg font-bold group-hover:text-primary transition-colors">Open Source</h3>
+<p class="text-xs text-slate-400 mt-1">Community Projects</p>
+<div class="mt-4 flex justify-between items-center text-xs">
+<span class="bg-primary/10 text-primary px-2 py-1 rounded">402 Members</span>
+<span class="material-symbols-outlined text-slate-600 group-hover:text-primary">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- Generating placeholder clubs to fill 5x5 concept -->
+<div class="club-card glass-panel rounded-xl overflow-hidden transition-all duration-300 cursor-pointer group">
+<div class="h-32 w-full bg-gradient-to-br from-yellow-600 to-orange-700 relative">
+<div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-all"></div>
+<div class="absolute bottom-3 left-3 flex items-center gap-2">
+<div class="p-2 bg-white/10 backdrop-blur rounded-lg"><span class="material-symbols-outlined text-white text-xl">cloud</span></div>
+</div>
+</div>
+<div class="p-5">
+<h3 class="text-lg font-bold group-hover:text-primary transition-colors">Cloud Tech</h3>
+<p class="text-xs text-slate-400 mt-1">Infrastructure</p>
+<div class="mt-4 flex justify-between items-center text-xs"><span class="bg-primary/10 text-primary px-2 py-1 rounded">156 Members</span><span class="material-symbols-outlined text-slate-600 group-hover:text-primary">arrow_forward</span></div>
+</div>
+</div>
+<!-- More grid items (truncated for brevity but following pattern) -->
+<div class="club-card glass-panel rounded-xl overflow-hidden transition-all duration-300 cursor-pointer group">
+<div class="h-32 w-full bg-gradient-to-br from-cyan-600 to-blue-700 relative">
+<div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-all"></div>
+<div class="absolute bottom-3 left-3 flex items-center gap-2">
+<div class="p-2 bg-white/10 backdrop-blur rounded-lg"><span class="material-symbols-outlined text-white text-xl">database</span></div>
+</div>
+</div>
+<div class="p-5">
+<h3 class="text-lg font-bold group-hover:text-primary transition-colors">Data Science</h3>
+<p class="text-xs text-slate-400 mt-1">Big Data Insights</p>
+<div class="mt-4 flex justify-between items-center text-xs"><span class="bg-primary/10 text-primary px-2 py-1 rounded">278 Members</span><span class="material-symbols-outlined text-slate-600 group-hover:text-primary">arrow_forward</span></div>
+</div>
+</div>
+<!-- Repeat for 25 items total in a real production app -->
+<!-- Filler cards with unique titles -->
+<div class="club-card glass-panel rounded-xl overflow-hidden transition-all duration-300 cursor-pointer group">
+<div class="h-32 w-full bg-gradient-to-br from-amber-600 to-yellow-900 relative">
+<div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-all"></div>
+<div class="absolute bottom-3 left-3 flex items-center gap-2"><div class="p-2 bg-white/10 backdrop-blur rounded-lg"><span class="material-symbols-outlined text-white text-xl">currency_bitcoin</span></div></div>
+</div>
+<div class="p-5"><h3 class="text-lg font-bold group-hover:text-primary transition-colors">Blockchain</h3><p class="text-xs text-slate-400 mt-1">Web3 &amp; Crypto</p><div class="mt-4 flex justify-between items-center text-xs"><span class="bg-primary/10 text-primary px-2 py-1 rounded">94 Members</span><span class="material-symbols-outlined text-slate-600 group-hover:text-primary">arrow_forward</span></div></div>
+</div>
+<div class="club-card glass-panel rounded-xl overflow-hidden transition-all duration-300 cursor-pointer group">
+<div class="h-32 w-full bg-gradient-to-br from-slate-600 to-slate-900 relative">
+<div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-all"></div>
+<div class="absolute bottom-3 left-3 flex items-center gap-2"><div class="p-2 bg-white/10 backdrop-blur rounded-lg"><span class="material-symbols-outlined text-white text-xl">settings_input_component</span></div></div>
+</div>
+<div class="p-5"><h3 class="text-lg font-bold group-hover:text-primary transition-colors">IoT Lab</h3><p class="text-xs text-slate-400 mt-1">Connected Devices</p><div class="mt-4 flex justify-between items-center text-xs"><span class="bg-primary/10 text-primary px-2 py-1 rounded">122 Members</span><span class="material-symbols-outlined text-slate-600 group-hover:text-primary">arrow_forward</span></div></div>
+</div>
+<div class="club-card glass-panel rounded-xl overflow-hidden transition-all duration-300 cursor-pointer group">
+<div class="h-32 w-full bg-gradient-to-br from-indigo-600 to-purple-800 relative">
+<div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-all"></div>
+<div class="absolute bottom-3 left-3 flex items-center gap-2"><div class="p-2 bg-white/10 backdrop-blur rounded-lg"><span class="material-symbols-outlined text-white text-xl">view_in_ar</span></div></div>
+</div>
+<div class="p-5"><h3 class="text-lg font-bold group-hover:text-primary transition-colors">AR/VR Studio</h3><p class="text-xs text-slate-400 mt-1">Immersive Media</p><div class="mt-4 flex justify-between items-center text-xs"><span class="bg-primary/10 text-primary px-2 py-1 rounded">68 Members</span><span class="material-symbols-outlined text-slate-600 group-hover:text-primary">arrow_forward</span></div></div>
+</div>
+<div class="club-card glass-panel rounded-xl overflow-hidden transition-all duration-300 cursor-pointer group">
+<div class="h-32 w-full bg-gradient-to-br from-green-600 to-lime-800 relative">
+<div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-all"></div>
+<div class="absolute bottom-3 left-3 flex items-center gap-2"><div class="p-2 bg-white/10 backdrop-blur rounded-lg"><span class="material-symbols-outlined text-white text-xl">sports_esports</span></div></div>
+</div>
+<div class="p-5"><h3 class="text-lg font-bold group-hover:text-primary transition-colors">Game Dev</h3><p class="text-xs text-slate-400 mt-1">Indie Development</p><div class="mt-4 flex justify-between items-center text-xs"><span class="bg-primary/10 text-primary px-2 py-1 rounded">210 Members</span><span class="material-symbols-outlined text-slate-600 group-hover:text-primary">arrow_forward</span></div></div>
+</div>
+<div class="club-card glass-panel rounded-xl overflow-hidden transition-all duration-300 cursor-pointer group">
+<div class="h-32 w-full bg-gradient-to-br from-violet-600 to-blue-900 relative">
+<div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-all"></div>
+<div class="absolute bottom-3 left-3 flex items-center gap-2"><div class="p-2 bg-white/10 backdrop-blur rounded-lg"><span class="material-symbols-outlined text-white text-xl">palette</span></div></div>
+</div>
+<div class="p-5"><h3 class="text-lg font-bold group-hover:text-primary transition-colors">UI/UX Design</h3><p class="text-xs text-slate-400 mt-1">Interface Design</p><div class="mt-4 flex justify-between items-center text-xs"><span class="bg-primary/10 text-primary px-2 py-1 rounded">154 Members</span><span class="material-symbols-outlined text-slate-600 group-hover:text-primary">arrow_forward</span></div></div>
+</div>
+<div class="club-card glass-panel rounded-xl overflow-hidden transition-all duration-300 cursor-pointer group">
+<div class="h-32 w-full bg-gradient-to-br from-blue-500 to-sky-700 relative">
+<div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-all"></div>
+<div class="absolute bottom-3 left-3 flex items-center gap-2"><div class="p-2 bg-white/10 backdrop-blur rounded-lg"><span class="material-symbols-outlined text-white text-xl">phone_iphone</span></div></div>
+</div>
+<div class="p-5"><h3 class="text-lg font-bold group-hover:text-primary transition-colors">Mobile App Hub</h3><p class="text-xs text-slate-400 mt-1">Native &amp; Cross-Platform</p><div class="mt-4 flex justify-between items-center text-xs"><span class="bg-primary/10 text-primary px-2 py-1 rounded">189 Members</span><span class="material-symbols-outlined text-slate-600 group-hover:text-primary">arrow_forward</span></div></div>
+</div>
+<div class="club-card glass-panel rounded-xl overflow-hidden transition-all duration-300 cursor-pointer group">
+<div class="h-32 w-full bg-gradient-to-br from-orange-600 to-red-800 relative">
+<div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-all"></div>
+<div class="absolute bottom-3 left-3 flex items-center gap-2"><div class="p-2 bg-white/10 backdrop-blur rounded-lg"><span class="material-symbols-outlined text-white text-xl">memory</span></div></div>
+</div>
+<div class="p-5"><h3 class="text-lg font-bold group-hover:text-primary transition-colors">Embedded Systems</h3><p class="text-xs text-slate-400 mt-1">Firmware Engineering</p><div class="mt-4 flex justify-between items-center text-xs"><span class="bg-primary/10 text-primary px-2 py-1 rounded">112 Members</span><span class="material-symbols-outlined text-slate-600 group-hover:text-primary">arrow_forward</span></div></div>
+</div>
+<div class="club-card glass-panel rounded-xl overflow-hidden transition-all duration-300 cursor-pointer group">
+<div class="h-32 w-full bg-gradient-to-br from-emerald-500 to-green-700 relative">
+<div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-all"></div>
+<div class="absolute bottom-3 left-3 flex items-center gap-2"><div class="p-2 bg-white/10 backdrop-blur rounded-lg"><span class="material-symbols-outlined text-white text-xl">biotech</span></div></div>
+</div>
+<div class="p-5"><h3 class="text-lg font-bold group-hover:text-primary transition-colors">BioTech Hub</h3><p class="text-xs text-slate-400 mt-1">Computational Biology</p><div class="mt-4 flex justify-between items-center text-xs"><span class="bg-primary/10 text-primary px-2 py-1 rounded">76 Members</span><span class="material-symbols-outlined text-slate-600 group-hover:text-primary">arrow_forward</span></div></div>
+</div>
+<!-- Row 4 items -->
+<div class="club-card glass-panel rounded-xl overflow-hidden transition-all duration-300 cursor-pointer group">
+<div class="h-32 w-full bg-gradient-to-br from-rose-500 to-pink-700 relative">
+<div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-all"></div>
+<div class="absolute bottom-3 left-3 flex items-center gap-2"><div class="p-2 bg-white/10 backdrop-blur rounded-lg"><span class="material-symbols-outlined text-white text-xl">rocket_launch</span></div></div>
+</div>
+<div class="p-5"><h3 class="text-lg font-bold group-hover:text-primary transition-colors">Space Tech</h3><p class="text-xs text-slate-400 mt-1">Aerospace Systems</p><div class="mt-4 flex justify-between items-center text-xs"><span class="bg-primary/10 text-primary px-2 py-1 rounded">58 Members</span><span class="material-symbols-outlined text-slate-600 group-hover:text-primary">arrow_forward</span></div></div>
+</div>
+<div class="club-card glass-panel rounded-xl overflow-hidden transition-all duration-300 cursor-pointer group">
+<div class="h-32 w-full bg-gradient-to-br from-blue-700 to-indigo-900 relative">
+<div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-all"></div>
+<div class="absolute bottom-3 left-3 flex items-center gap-2"><div class="p-2 bg-white/10 backdrop-blur rounded-lg"><span class="material-symbols-outlined text-white text-xl">lan</span></div></div>
+</div>
+<div class="p-5"><h3 class="text-lg font-bold group-hover:text-primary transition-colors">Networking</h3><p class="text-xs text-slate-400 mt-1">Cisco &amp; Routing</p><div class="mt-4 flex justify-between items-center text-xs"><span class="bg-primary/10 text-primary px-2 py-1 rounded">130 Members</span><span class="material-symbols-outlined text-slate-600 group-hover:text-primary">arrow_forward</span></div></div>
+</div>
+<div class="club-card glass-panel rounded-xl overflow-hidden transition-all duration-300 cursor-pointer group">
+<div class="h-32 w-full bg-gradient-to-br from-gray-700 to-black relative">
+<div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-all"></div>
+<div class="absolute bottom-3 left-3 flex items-center gap-2"><div class="p-2 bg-white/10 backdrop-blur rounded-lg"><span class="material-symbols-outlined text-white text-xl">engineering</span></div></div>
+</div>
+<div class="p-5"><h3 class="text-lg font-bold group-hover:text-primary transition-colors">DevOps</h3><p class="text-xs text-slate-400 mt-1">CI/CD Automation</p><div class="mt-4 flex justify-between items-center text-xs"><span class="bg-primary/10 text-primary px-2 py-1 rounded">105 Members</span><span class="material-symbols-outlined text-slate-600 group-hover:text-primary">arrow_forward</span></div></div>
+</div>
+<div class="club-card glass-panel rounded-xl overflow-hidden transition-all duration-300 cursor-pointer group">
+<div class="h-32 w-full bg-gradient-to-br from-yellow-500 to-amber-700 relative">
+<div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-all"></div>
+<div class="absolute bottom-3 left-3 flex items-center gap-2"><div class="p-2 bg-white/10 backdrop-blur rounded-lg"><span class="material-symbols-outlined text-white text-xl">payments</span></div></div>
+</div>
+<div class="p-5"><h3 class="text-lg font-bold group-hover:text-primary transition-colors">FinTech Lab</h3><p class="text-xs text-slate-400 mt-1">Digital Finance</p><div class="mt-4 flex justify-between items-center text-xs"><span class="bg-primary/10 text-primary px-2 py-1 rounded">91 Members</span><span class="material-symbols-outlined text-slate-600 group-hover:text-primary">arrow_forward</span></div></div>
+</div>
+<div class="club-card glass-panel rounded-xl overflow-hidden transition-all duration-300 cursor-pointer group">
+<div class="h-32 w-full bg-gradient-to-br from-teal-500 to-cyan-700 relative">
+<div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-all"></div>
+<div class="absolute bottom-3 left-3 flex items-center gap-2"><div class="p-2 bg-white/10 backdrop-blur rounded-lg"><span class="material-symbols-outlined text-white text-xl">bolt</span></div></div>
+</div>
+<div class="p-5"><h3 class="text-lg font-bold group-hover:text-primary transition-colors">Energy Tech</h3><p class="text-xs text-slate-400 mt-1">Renewables</p><div class="mt-4 flex justify-between items-center text-xs"><span class="bg-primary/10 text-primary px-2 py-1 rounded">82 Members</span><span class="material-symbols-outlined text-slate-600 group-hover:text-primary">arrow_forward</span></div></div>
+</div>
+<!-- Row 5 items -->
+<div class="club-card glass-panel rounded-xl overflow-hidden transition-all duration-300 cursor-pointer group">
+<div class="h-32 w-full bg-gradient-to-br from-blue-900 to-black relative">
+<div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-all"></div>
+<div class="absolute bottom-3 left-3 flex items-center gap-2"><div class="p-2 bg-white/10 backdrop-blur rounded-lg"><span class="material-symbols-outlined text-white text-xl">blur_on</span></div></div>
+</div>
+<div class="p-5"><h3 class="text-lg font-bold group-hover:text-primary transition-colors">Quantum Lab</h3><p class="text-xs text-slate-400 mt-1">Future Computing</p><div class="mt-4 flex justify-between items-center text-xs"><span class="bg-primary/10 text-primary px-2 py-1 rounded">43 Members</span><span class="material-symbols-outlined text-slate-600 group-hover:text-primary">arrow_forward</span></div></div>
+</div>
+<div class="club-card glass-panel rounded-xl overflow-hidden transition-all duration-300 cursor-pointer group">
+<div class="h-32 w-full bg-gradient-to-br from-purple-800 to-black relative">
+<div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-all"></div>
+<div class="absolute bottom-3 left-3 flex items-center gap-2"><div class="p-2 bg-white/10 backdrop-blur rounded-lg"><span class="material-symbols-outlined text-white text-xl">architecture</span></div></div>
+</div>
+<div class="p-5"><h3 class="text-lg font-bold group-hover:text-primary transition-colors">CAD Design</h3><p class="text-xs text-slate-400 mt-1">Industrial 3D</p><div class="mt-4 flex justify-between items-center text-xs"><span class="bg-primary/10 text-primary px-2 py-1 rounded">119 Members</span><span class="material-symbols-outlined text-slate-600 group-hover:text-primary">arrow_forward</span></div></div>
+</div>
+<div class="club-card glass-panel rounded-xl overflow-hidden transition-all duration-300 cursor-pointer group">
+<div class="h-32 w-full bg-gradient-to-br from-red-800 to-black relative">
+<div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-all"></div>
+<div class="absolute bottom-3 left-3 flex items-center gap-2"><div class="p-2 bg-white/10 backdrop-blur rounded-lg"><span class="material-symbols-outlined text-white text-xl">auto_mode</span></div></div>
+</div>
+<div class="p-5"><h3 class="text-lg font-bold group-hover:text-primary transition-colors">Auto-Tech</h3><p class="text-xs text-slate-400 mt-1">Autonomous Driving</p><div class="mt-4 flex justify-between items-center text-xs"><span class="bg-primary/10 text-primary px-2 py-1 rounded">88 Members</span><span class="material-symbols-outlined text-slate-600 group-hover:text-primary">arrow_forward</span></div></div>
+</div>
+<div class="club-card glass-panel rounded-xl overflow-hidden transition-all duration-300 cursor-pointer group">
+<div class="h-32 w-full bg-gradient-to-br from-blue-400 to-indigo-600 relative">
+<div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-all"></div>
+<div class="absolute bottom-3 left-3 flex items-center gap-2"><div class="p-2 bg-white/10 backdrop-blur rounded-lg"><span class="material-symbols-outlined text-white text-xl">public</span></div></div>
+</div>
+<div class="p-5"><h3 class="text-lg font-bold group-hover:text-primary transition-colors">Web Dev Hub</h3><p class="text-xs text-slate-400 mt-1">Full Stack Engineers</p><div class="mt-4 flex justify-between items-center text-xs"><span class="bg-primary/10 text-primary px-2 py-1 rounded">382 Members</span><span class="material-symbols-outlined text-slate-600 group-hover:text-primary">arrow_forward</span></div></div>
+</div>
+<div class="club-card glass-panel rounded-xl overflow-hidden transition-all duration-300 cursor-pointer group border-dashed border-2 border-slate-700 hover:border-primary flex items-center justify-center min-h-[220px]">
+<div class="text-center">
+<div class="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center mx-auto mb-3">
+<span class="material-symbols-outlined text-slate-400 group-hover:text-primary">add</span>
+</div>
+<p class="font-bold text-slate-400 group-hover:text-primary">Suggest Club</p>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</body></html>

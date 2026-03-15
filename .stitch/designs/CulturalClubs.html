@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>COUNCIL | TRIBE Cultural Clubs</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#257bf4",
+                        "background-light": "#f5f7f8",
+                        "background-dark": "#101722",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .frosted-glass {
+            background: rgba(37, 123, 244, 0.05);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .club-card-gradient {
+            background: linear-gradient(180deg, rgba(16, 23, 34, 0) 0%, rgba(16, 23, 34, 0.8) 100%);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen">
+<div class="flex h-auto min-h-screen w-full flex-col">
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between border-b border-slate-200 dark:border-slate-800 px-6 py-4 lg:px-20">
+<div class="flex items-center gap-4 text-primary">
+<div class="size-8 flex items-center justify-center">
+<span class="material-symbols-outlined text-3xl">hub</span>
+</div>
+<h2 class="text-slate-900 dark:text-white text-xl font-bold leading-tight tracking-tight">TRIBE</h2>
+</div>
+<div class="flex gap-3">
+<button class="flex items-center justify-center rounded-lg h-10 w-10 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<button class="flex items-center justify-center rounded-lg h-10 w-10 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined">account_circle</span>
+</button>
+</div>
+</header>
+<main class="flex-1 px-6 py-10 lg:px-20">
+<div class="max-w-[1400px] mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+<div class="space-y-2">
+<h1 class="text-slate-900 dark:text-white text-5xl font-black leading-none tracking-tighter uppercase">COUNCIL</h1>
+<p class="text-primary font-bold text-sm tracking-[0.2em] uppercase">Cultural Clubs</p>
+</div>
+<button class="flex items-center justify-center gap-2 px-6 py-3 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-900 dark:text-white rounded-xl font-bold transition-all group">
+<span class="material-symbols-outlined text-xl group-hover:-translate-x-1 transition-transform">arrow_back</span>
+<span>Back to Dashboard</span>
+</button>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+<!-- Row 1 -->
+<div class="relative group aspect-square rounded-xl overflow-hidden frosted-glass cursor-pointer">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Dynamic contemporary dance performance on stage" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBBSCucVruGeGvW3V0vSQcXn_6f_HyVuR3oM0cjh4t2VtoOIPf2rMIPN5HtEP7CmvVPCgB7kL0yS5Ebs1F8dwqqjMwtFLMTCBmF5UzKq3Q9KWkx1y6zMt5Zad-XC5glhoMakVmmYJGqaPsXK6gmzE5Pf-AXW_bE2rgJRcarEL77Lcw-1YgP7tqvU7zT9UUnFsyabXsTsSwRbvmwg9sduwm_Ya9Ex4h7Qa7TAMNMapNWOfOtjxK3UYSTxBFI6dQKLhD1VROitNmR3w')"></div>
+<div class="absolute inset-0 club-card-gradient group-hover:bg-primary/20 transition-all duration-300"></div>
+<div class="absolute bottom-4 left-4 right-4">
+<p class="text-white text-lg font-bold leading-tight">Dance Club</p>
+</div>
+</div>
+<div class="relative group aspect-square rounded-xl overflow-hidden frosted-glass cursor-pointer">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Microphone and musical instruments in a studio" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCpq2Du1il7JRnL_QjEGOTU24nAvJelM4gxcFMz1mSY3-A-At4PPWfOW-dTHNRw5uwDvmMfIl7FW5if2AHwGNv5mk_RswUf3OiQbMKwVd77TZqkj3-e6s9HI6Lu41O-qs5ZDXbTzbiFWwPw5fPshITIynal76fD17_5jQmpTOrNWHV_FzUm_5gjQZFJNYJ3jOqZZmx7G-KdT_L0chs6Uq7LfSM66bxw3NxQ5fv2zy7tXbWIXG5JMvd6mkxQl8tfpp4ayoGoBy4k2g')"></div>
+<div class="absolute inset-0 club-card-gradient group-hover:bg-primary/20 transition-all duration-300"></div>
+<div class="absolute bottom-4 left-4 right-4">
+<p class="text-white text-lg font-bold leading-tight">Music Society</p>
+</div>
+</div>
+<div class="relative group aspect-square rounded-xl overflow-hidden frosted-glass cursor-pointer">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Dramatic theater masks and spotlight" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCS7JATSEy-G67kHEKKo9T5-3cgbcUKg0nYNqxKrM8xGh0hJbz96IhjkOwqK0RiVmlC2aWEWS8XcRizblFzWfkXJ4MNqXetPIX14ZdqEHgRRA_y87HXA8YGJc4u6VTUNBd25ge9jFC3d3hl8w2Lil93AJnW0TBPvhF-epbWlOcBh9xopNIjWdJDL6Xcez9pzNaYNOPuIkH8-y2ykfgYljuDtJvlJAeIoqhSbMcy7gHUrk1iC0qgS9IHaqh8EUw8SjW_tmgKkj54lw')"></div>
+<div class="absolute inset-0 club-card-gradient group-hover:bg-primary/20 transition-all duration-300"></div>
+<div class="absolute bottom-4 left-4 right-4">
+<p class="text-white text-lg font-bold leading-tight">Drama Guild</p>
+</div>
+</div>
+<div class="relative group aspect-square rounded-xl overflow-hidden frosted-glass cursor-pointer">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Colorful abstract oil painting on canvas" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCbV3OSkEh6gWfXkdKq0GFG82uuv8OZBjJVZ3GUtkbiijuVvzNaijBvNlwR04Q7kGuwGd6KRJ5Dal7-kbIujufOdod0duTBNpLoslzZACbxqXKpgIA7KTOUPhFf40d0D3SXILBomvaw6YSUkwl46nMFoRbFzwMviJbz0ieC92Mu-mfd-ilBmXqJyhfp-4LusvIzeBW4eXTGLY8sCIlRAN1vh2Nyl3xdNSxcjlvaaCi-30w6F-elJXrfI6Z_e0WYfuWxosLQoIlEJg')"></div>
+<div class="absolute inset-0 club-card-gradient group-hover:bg-primary/20 transition-all duration-300"></div>
+<div class="absolute bottom-4 left-4 right-4">
+<p class="text-white text-lg font-bold leading-tight">Art Circle</p>
+</div>
+</div>
+<div class="relative group aspect-square rounded-xl overflow-hidden frosted-glass cursor-pointer">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="A pen writing on a vintage journal" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBrQEdkRDq_4H0jqwyB4WtvbIgnd1a1MsxpEaDR-E6MByJA-b1aSQdvF6_-Y7E7QiLbLVpnNKV3JGQpU1Ob7wq9rvXFaSTM0bcHr41MVq4i1yj7F7tO9ygjAtjJTULQyBJWHyUgy86uZYyGAarlJ1vcXGdQCl6AaeMefWFylMPZ1nLmmXNTe-aUBjidYl-9lOgpSqHcpSx3xVwnvxw7WzZ1vZwwof45vYtNzOgcohfqfEbYnTBGHjmKmNVxxd1wyo4PBQEZHJTDgw')"></div>
+<div class="absolute inset-0 club-card-gradient group-hover:bg-primary/20 transition-all duration-300"></div>
+<div class="absolute bottom-4 left-4 right-4">
+<p class="text-white text-lg font-bold leading-tight">Literary Club</p>
+</div>
+</div>
+<!-- Row 2 -->
+<div class="relative group aspect-square rounded-xl overflow-hidden frosted-glass cursor-pointer">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Traditional historical architecture under sunset" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDJE5lPJHqoLSFzw62jPNJsm5LCZs5N39m1jEEq58nIf_5RxOuSAG6EPkgBj1ZANnF2RaYKYLsxj6234VRsrKCfJjC_SnHXgNJPQDtDaMZ5q1EvUcAfE5k1Ka6yI3kF05N8eSd2uPol-Lely7TV-VD8pkooxsdUtfvCP-o2PP_FSpzOlxazKmj2LytLCgaD-NHS9DfN9ANcv0rP8n_7coJBNalrHk1jLS6qXAqxJwCaFxjaz0UrGz3Ii-4z3oCiuVBD2JcvMapmmw')"></div>
+<div class="absolute inset-0 club-card-gradient group-hover:bg-primary/20 transition-all duration-300"></div>
+<div class="absolute bottom-4 left-4 right-4">
+<p class="text-white text-lg font-bold leading-tight">Heritage Club</p>
+</div>
+</div>
+<div class="relative group aspect-square rounded-xl overflow-hidden frosted-glass cursor-pointer">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Vintage camera lens and equipment" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAZsNsSIsKf1-8uWqL017jznhz2ijNHQoH-uD_Rt8tU6ejihM2lRPf7bj7m2Fm_UY0PBSBt-JSpG0ku0WSbukLkrXP8UehsDqOyQW9PSREwNozqAqNs6epqjHt3t5olKXusUkHiAHPJD7LaamQyu7YsuvTazeMmQcmp_Q_C24ckHzLz1vflDFfvLS8njPUoloI-q9iVkBXnToK-msn58AAGzTGzNwCdvKD54cIdQU7DWovragAgC2zK7DYwZYirCDMUiooI33nZug')"></div>
+<div class="absolute inset-0 club-card-gradient group-hover:bg-primary/20 transition-all duration-300"></div>
+<div class="absolute bottom-4 left-4 right-4">
+<p class="text-white text-lg font-bold leading-tight">Photography</p>
+</div>
+</div>
+<div class="relative group aspect-square rounded-xl overflow-hidden frosted-glass cursor-pointer">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Film production clapboard and reel" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC9_qOGLoCxxw7B9x8XoE_BUDlc1Cg402DRSXQej5kpSRBlp6PXFuFzOtQ1B2hCqyqMCL75MYc-SXwO4WrrKiWqKYlb8A7t8cDRQSUymBIwz_Xbn2DdU1kXYKGqQfVyQ7Mh1hjc4SRUdox1-qbuaI7Bmz9IJ-9_QsuC1tfyWh_sS-W_s1nZ5KfYhsx-uISdsVodTX6ppYJxsOcjU9J6O6pQ6hyKOhtrzcAS2fe-OtA6fRxY9uxWT4Qy7cqJawNN00l7cwh-UZS9ww')"></div>
+<div class="absolute inset-0 club-card-gradient group-hover:bg-primary/20 transition-all duration-300"></div>
+<div class="absolute bottom-4 left-4 right-4">
+<p class="text-white text-lg font-bold leading-tight">Film Society</p>
+</div>
+</div>
+<div class="relative group aspect-square rounded-xl overflow-hidden frosted-glass cursor-pointer">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="High fashion clothing rack in studio" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC97R1lJ9bEnXCdikRzD10-vTxg-DSa5_LxL_-sPLd-7pT0iDJP9AZJrFlYroCczGVb4GxGbu0VuShLMarcr_3loDSKZr58A-Jn6YXBsWXErtRndUq-fFVGuvyD-6IG0OgSGBfkRStPB60k-Jh2K3Nzw1cj2rRiP8fKBxNoEEaAIQU8ZIjglH7lb3xLyPfjujw5BsbWaqGdHzrvYuMgEtbmOb1lEQj6dcBof_adtRGLxyjXaaLPclYh9nfiphhQn_MMJ6eWcH-JLg')"></div>
+<div class="absolute inset-0 club-card-gradient group-hover:bg-primary/20 transition-all duration-300"></div>
+<div class="absolute bottom-4 left-4 right-4">
+<p class="text-white text-lg font-bold leading-tight">Fashion House</p>
+</div>
+</div>
+<div class="relative group aspect-square rounded-xl overflow-hidden frosted-glass cursor-pointer">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Professional chef plating gourmet meal" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB6WbYqbR_6C6wA4f6tapSq15HC6Wzg85sjrPkihd2bM6Gv7pVbRIRA20SiMc1VzeoTxwxLUEOk24cHGC64xsZwkyGWcynWsiQYeTh9ua5V3DvnzBDfNHHPsnnNQkHtZF5FAjxZf3O-reKa825Qo6vblMcXKQJbaOK2gn9QTInmldfB_JtasnV2GSBuM6EIm22gr2USgPuaa_J2F6BTWHCxPFIJ7tSvDWVNO4yYyJiy3f71i3vpjt_PCQJgCuxFBcbhgNwPOdAWtw')"></div>
+<div class="absolute inset-0 club-card-gradient group-hover:bg-primary/20 transition-all duration-300"></div>
+<div class="absolute bottom-4 left-4 right-4">
+<p class="text-white text-lg font-bold leading-tight">Culinary Arts</p>
+</div>
+</div>
+<!-- Row 3 -->
+<div class="relative group aspect-square rounded-xl overflow-hidden frosted-glass cursor-pointer">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Public speaker at a podium with microphone" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCKthSSw9xKGtd-KGARE_RGSbHdiTe1gqVjxOeF6Om6HwaRVxBeUJ8UPvLlTABUuxEBwiS3bSpXdNvHd2j8WaBO8zk7G3BSmnCqskO_fQNcA3CsXACy0gP2drcSZJHUFP1wzI8AOEmVwJ6dTmyaEJWcAgryp9yiIvZBCfMaIdybFi2xXhssxcQjLMjBWpV4HCZzCbhX4kFBpukVxeA2qBREJx0twl9B8cZTlnRTIcsOQ3v3cTrlY_FNi0zN59sdkDtdlvhFwWEJoQ')"></div>
+<div class="absolute inset-0 club-card-gradient group-hover:bg-primary/20 transition-all duration-300"></div>
+<div class="absolute bottom-4 left-4 right-4">
+<p class="text-white text-lg font-bold leading-tight">Debate Society</p>
+</div>
+</div>
+<div class="relative group aspect-square rounded-xl overflow-hidden frosted-glass cursor-pointer">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Glowing neon question mark light" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDNIaGWW06iUXfQDXPLW_D5gyevOeh2kaclF4wSBIH9PQk9Wh_nQ0ZfNebwhcIynX4-mcMomD0J7Gb3ERYvEkBkY3SHWr3ECV6h7uS_r0-ZAKdGWxNsydBYyatSmBi4a6OaRIlSNoEEG858JASqKdG2fpf9bTUVbUDsICTbA3snHO9oHyRuICiWjFAmmV3OWaj3RDwQU0kgha9z5fg4ZVOJXZlc1-DKZ9npqj0iQ5bqWg7JkqEuIYPIsCbN4-Tkyi1UkycLNIlsnA')"></div>
+<div class="absolute inset-0 club-card-gradient group-hover:bg-primary/20 transition-all duration-300"></div>
+<div class="absolute bottom-4 left-4 right-4">
+<p class="text-white text-lg font-bold leading-tight">Quiz Club</p>
+</div>
+</div>
+<div class="relative group aspect-square rounded-xl overflow-hidden frosted-glass cursor-pointer">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Modern industrial robotic arm in lab" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCYN1ce6vrFz5eGJzBVQ9Lw3vswSTOuiKCN2hONXCnG8zX29IcMIPvk5R7XIGQ8RggUDGhIKQ9dgXzh358JpfmURQo9sEi-lBPN6197oI4_wGnWtD3yeXVhD1I_Nt67RztnZsQ47U4BcOO30zMQpahL2Ql4ha-g-siZlSfdo1ZGYQVpkKeOsM6yn_AB-LMQL9UTsy-4x2RQvixB7Ilm9wgv4La_K1asPv69R6nV3MIxa6cjFmEnWOte0ykqnhOgfEd3qI1unAoivQ')"></div>
+<div class="absolute inset-0 club-card-gradient group-hover:bg-primary/20 transition-all duration-300"></div>
+<div class="absolute bottom-4 left-4 right-4">
+<p class="text-white text-lg font-bold leading-tight">Robotics</p>
+</div>
+</div>
+<div class="relative group aspect-square rounded-xl overflow-hidden frosted-glass cursor-pointer">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Colorful lines of programming code on screen" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuABSaAK6Bo7sI8Yz5knpa7wuryd3UOWuKhrp_xREMnWEoB8Mgi4ou5uRmf3mSbP4BQwrM0CS9P-UNJIE1UW89GTCaGConwbE3xWjHc647CePcFezP6ENTjIHaQJwjGGAh5LMjaINRHgfgR700s1uWVgunFRy0L1z4dEwj74UwmQUHgX59Pi7Irc63bcHV7MFx7e1vwJVO6mX_QoyxucAnyam41w3kNsQ-KivpaVmvUofZ7_RGQSAkChfoz6r_ba5CA6WA2XKguG3g')"></div>
+<div class="absolute inset-0 club-card-gradient group-hover:bg-primary/20 transition-all duration-300"></div>
+<div class="absolute bottom-4 left-4 right-4">
+<p class="text-white text-lg font-bold leading-tight">Coding Hub</p>
+</div>
+</div>
+<div class="relative group aspect-square rounded-xl overflow-hidden frosted-glass cursor-pointer">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Modern gaming PC setup with neon lights" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD4T7Mr2Sz39D2goyZltJQDZY4Kieqh2dKeR2n35SMxmcGvRjZKCr2nHUiqc4sX01hKsP3kNrrqbcVgjuy5XYfi3J29nYaqwBaCkR8GJJZit4iAc6nBo_TX1j7w8PhwmadSCB5nus176c5KY2zPMVqi6bh--ZhgfgVr6lrzU8u28r6uke-TaxIkJMysRDnQRjwDtCkxA4IrpFOtW3Rhq_CHi3bDV2WsM50nN-Es0QnepKNK8XE2DG46p58AunvJ6xU_fPsBg0mT0w')"></div>
+<div class="absolute inset-0 club-card-gradient group-hover:bg-primary/20 transition-all duration-300"></div>
+<div class="absolute bottom-4 left-4 right-4">
+<p class="text-white text-lg font-bold leading-tight">Gaming Guild</p>
+</div>
+</div>
+<!-- Row 4 -->
+<div class="relative group aspect-square rounded-xl overflow-hidden frosted-glass cursor-pointer">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Manga books stacked neatly together" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAD7wLzBY25JHmvCUBJKjGrO0GuhZdOnWdE6bt13kt9CGXA_yhQJbU2vYyXlp0R_Y9TRt6aDyXcU8cKFT65Rc5hyUwYqDRxL6_kqgq2RvFp3JYXOH4oU7Tre9-h7Wyq0GPb6s3h-f8mDHXQLoVC631KrrMQtN-4NnHG5C1HxdnHodopHdw5WEAt4A2gqKe8Mkkm25tUitAeVjLsr-t081bPDgfAqv_-8yxkVowQ7Qb_in_vq_tC7aHQFvfU2gH7L_38Zq7ixRrzxw')"></div>
+<div class="absolute inset-0 club-card-gradient group-hover:bg-primary/20 transition-all duration-300"></div>
+<div class="absolute bottom-4 left-4 right-4">
+<p class="text-white text-lg font-bold leading-tight">Anime Society</p>
+</div>
+</div>
+<div class="relative group aspect-square rounded-xl overflow-hidden frosted-glass cursor-pointer">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Space nebula and stars in deep night sky" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBJzaLwXQP9tWdxDMeVM6anKAUqPApmsKdaW9zDwdzO8NUdNHMDqjTNOPvh9GexukxC4QZrnZ_-FxGCdvd6VUopOUSbePYAQmifGCfJ5k22mGbQPPb8RerEgMEnvkSxurrAVg0ceykHjmbTulf6xz4FVZhtMOHfn6NuvSZvB2nmync-DpSqCsCGBBQ3HE299R-hDv_7mCGVXQdtpZyGK-MKegLULPIFjQSa6Jr9UuyILseUlAx4JXtozI3dYpQRWhE9WTnoIAK73g')"></div>
+<div class="absolute inset-0 club-card-gradient group-hover:bg-primary/20 transition-all duration-300"></div>
+<div class="absolute bottom-4 left-4 right-4">
+<p class="text-white text-lg font-bold leading-tight">Astronomy</p>
+</div>
+</div>
+<div class="relative group aspect-square rounded-xl overflow-hidden frosted-glass cursor-pointer">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Lush green forest with sunlight through trees" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA3Rwyf5lKzscalklE4mM-sf3tOCr1tBF06TUNjWbcipHpZoPpz8AkeURKdffXHEprvm0bSNvVcESdf98lav0SrYcIWx7Ol6iYh7aIFKFCbfadi3emLILCxNxq4TKFeT2sdYXn0kYxQuU7gAYU4u6MKztC7c3LwFVgXY0XotfGUOtsd3nRxKqcM9jgbG7LPuSY4LKxEmpP-NuSINNYkXabslQQxGXDQMzv2ZVlliI6ihuGgFc7kPM2S99QpCrFIPR-qOHm10mwNuw')"></div>
+<div class="absolute inset-0 club-card-gradient group-hover:bg-primary/20 transition-all duration-300"></div>
+<div class="absolute bottom-4 left-4 right-4">
+<p class="text-white text-lg font-bold leading-tight">Nature Club</p>
+</div>
+</div>
+<div class="relative group aspect-square rounded-xl overflow-hidden frosted-glass cursor-pointer">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Hands holding a small plant together" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC-6h_ngjHEjBSfrL5ETETYwHDHUoe-jjc5g-J_Pa9eXvsjN__iYgdUU-bhwDgAKAyTLWsPBBG7_mGSSv8C5NlEud3REkPuX-prLCXmf8dqwCgP3Q3MrGnWRDsgbnzQVuzrRh-yu12vPZhESXHaKiUrRBr4ZzrL7913Sd-g795FwDiSB_3svnUAzKQ06aKiaSpwQsF93QHZD9bRU2oBPGrVFIjDiihwVs-L6FFE6iffYMt3fJRkWi8u8ih6fntvlRi_3ALZgZrsxQ')"></div>
+<div class="absolute inset-0 club-card-gradient group-hover:bg-primary/20 transition-all duration-300"></div>
+<div class="absolute bottom-4 left-4 right-4">
+<p class="text-white text-lg font-bold leading-tight">Social Service</p>
+</div>
+</div>
+<div class="relative group aspect-square rounded-xl overflow-hidden frosted-glass cursor-pointer">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Close up of a runner at start line" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDs8EIRQWOssPBp1mMwz8fpdeS0CegzUd5tsIND2dTqnSy3ptUrjKYLr1bTgXhyirdD4Kgcjg1K_WE2bG6L_vXz_rb53GI-xm-Y-rRxVIuKjWJtop3YUBvCTIozFGKINwkfMQ4ES2__NVN7DHU1ZnjO-n27cB9WAloFesPan9fazSsVLVQ7AdVaBFd4IlqYRS5tOxcHGZIVcTYQz3e0cjnGQWnIDvQsxM8KUT7ci3FuRazE2HRB46LAlOTk3DQga0a720xMkGTHFw')"></div>
+<div class="absolute inset-0 club-card-gradient group-hover:bg-primary/20 transition-all duration-300"></div>
+<div class="absolute bottom-4 left-4 right-4">
+<p class="text-white text-lg font-bold leading-tight">Sports Council</p>
+</div>
+</div>
+<!-- Row 5 -->
+<div class="relative group aspect-square rounded-xl overflow-hidden frosted-glass cursor-pointer">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Person practicing yoga in a serene studio" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAnvGnuspBGJsa_ioWI4nB0gW83GQXfNYG3bYoa8ZvcS33UR00_SW5IMSqhNqLmaqg_SJnifH_WJzjyQ2mKx_t2I858SBUrHYLTBQz7FS90rK7rZirDifEdHtdzSuTor0OEjn1SpdoUAhcu66M4iv9JQ71xs_28oQnqo5wUiIToUys7p9chccp4FHRxxmnhtV-slv5P5fovLuK56ZnEjSWiyGefOJ9matJEYRb9nbkejXnSlkz2_xZKE3GHpstGA9XSgYXP79oqVQ')"></div>
+<div class="absolute inset-0 club-card-gradient group-hover:bg-primary/20 transition-all duration-300"></div>
+<div class="absolute bottom-4 left-4 right-4">
+<p class="text-white text-lg font-bold leading-tight">Yoga Club</p>
+</div>
+</div>
+<div class="relative group aspect-square rounded-xl overflow-hidden frosted-glass cursor-pointer">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Martial arts uniforms and equipment" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuClIBtqNxAXiRpgTHIUfgCT0aVR-bl3PfYxgr39mwmH6o4Z84kuyOjHrfop4ZHTOT_LbaPtLiwwhhfSiCLeuaX34DHC_7yTRynJ2zzypjozMctUD-TMwju6xftzE_X_FTEz0Xm21iq5hB_xKqJ5gYqRwjeLbuEX79hyFKts3ftznY9vshDPlsmNValKZdY7sEdAf2nCAes89fitlZEifuS9ACZfCFVMFbB3U_mtS7MINhyNm06vsW7dFeFY2ErZp9p0Fzhq4Gs9Zg')"></div>
+<div class="absolute inset-0 club-card-gradient group-hover:bg-primary/20 transition-all duration-300"></div>
+<div class="absolute bottom-4 left-4 right-4">
+<p class="text-white text-lg font-bold leading-tight">Martial Arts</p>
+</div>
+</div>
+<div class="relative group aspect-square rounded-xl overflow-hidden frosted-glass cursor-pointer">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Modern digital music production workstation" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCz2KTnbsJXE5ALUShNWkz6MWKaZDht9AfPkkowogpASGsLvqQ8kW45EGkrBn2MxFPQPvbmk8QoXzkP_eY4HW2A1pjdy55iIy96WITjFleZ0pFpLg_F6zMiRPZP96ye6lCDq7Wv9YGNEJUEYKmMqZD46yBTrMwfp-axuMoYXiZBYILhoCb4KectwxpRGU2uss4UVdOEtWqgoc7qw-6udonadi2x0CFSHPWNLxU6CXnwWqe_jKCxHKLY3QT30ffsi5y9pRp-smZ2Kg')"></div>
+<div class="absolute inset-0 club-card-gradient group-hover:bg-primary/20 transition-all duration-300"></div>
+<div class="absolute bottom-4 left-4 right-4">
+<p class="text-white text-lg font-bold leading-tight">Production</p>
+</div>
+</div>
+<div class="relative group aspect-square rounded-xl overflow-hidden frosted-glass cursor-pointer">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Graphic designer working on large tablet" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC1DNi9QFIjC2zyjEDovZbjwu2c9gCsSs6RaocLaN4CUz4aLZNBF68y-6RarsuRmbeGGTG2c2gyt0K3EXvdlHhO70Ey36fT7UPkL7tfI4l_EviQkcsiPrUl-t3vKOdRuUIzKWzdTYWDSBNTGiOBaye9Df7glsknXqb_EunpETaRFCNjxgyoKM1K-XFs4Y6ZhmZ9a1kTAGrgRirJGKJRsKpJZZouMYJpXFZUE2K7lfEesj4MB4aljS-obC6R-qxZj7u46cQBXnw41A')"></div>
+<div class="absolute inset-0 club-card-gradient group-hover:bg-primary/20 transition-all duration-300"></div>
+<div class="absolute bottom-4 left-4 right-4">
+<p class="text-white text-lg font-bold leading-tight">Design Hub</p>
+</div>
+</div>
+<div class="relative group aspect-square rounded-xl overflow-hidden frosted-glass cursor-pointer">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Entrepreneurs brainstorming in a modern office" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDFcI3NV7ftNRG3sEwFNY3loYHW9IhTtfYDr1u-neDiKGLj1aJc60OQf20mOnhcIsLKqYxWwsY8RV-pLFW-6sra9guC8uFONlmXGGnyinPp2aBGb68zNrGgzdTREyx4QAj2BBl4WZlQJfygvDeV3WIbRa0QZw7JYeJyabGFJOAVfpyLzJ1S9EyKhCStJtKEuhs97MAThoEuVY9RPJaYkw71Me5AJfMOCfsXdjlYCC2rMmD2ZteFj__yWO8DO8iiMcVP40uWBYXrlQ')"></div>
+<div class="absolute inset-0 club-card-gradient group-hover:bg-primary/20 transition-all duration-300"></div>
+<div class="absolute bottom-4 left-4 right-4">
+<p class="text-white text-lg font-bold leading-tight">Innovation</p>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="px-6 py-8 lg:px-20 border-t border-slate-200 dark:border-slate-800 bg-white/5 dark:bg-black/5">
+<div class="max-w-[1400px] mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-slate-500 text-sm">© 2024 TRIBE Membership. All Rights Reserved.</p>
+<div class="flex gap-6">
+<a class="text-slate-500 hover:text-primary text-sm transition-colors" href="#">Privacy Policy</a>
+<a class="text-slate-500 hover:text-primary text-sm transition-colors" href="#">Terms of Service</a>
+<a class="text-slate-500 hover:text-primary text-sm transition-colors" href="#">Contact Support</a>
+</div>
+</div>
+</footer>
+</div>
+</div>
+</body></html>
